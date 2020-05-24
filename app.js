@@ -28,7 +28,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/userDB", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://tanishqsinghai11:Prakhar11@cluster0-daqiv.mongodb.net/secretApp?retryWrites=true&w=majority", { useNewUrlParser: true });
 mongoose.set("useCreateIndex", true);
 
 const userSchema = new mongoose.Schema({
